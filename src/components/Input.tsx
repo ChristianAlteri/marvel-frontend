@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 const Input = () => {
   const [options, setOptions] = useState([]);
   const [search, setSearch] = useState("");
-  // const publicAPI = process.env.REACT_APP_PUBLIC_API;
-  // const privateAPI = process.env.REACT_APP_PRIVATE_API;
-  const publicAPI = '93be462a3e6dd7725ab7fd0f4876cfb1';
-  const privateAPI = 'ed3015eb1eeb49899ecc168cf41ea15cec49ff4c';
+  const publicAPI = process.env.REACT_APP_PUBLIC_API;
+  const privateAPI = process.env.REACT_APP_PRIVATE_API;
+
+
 
 
   useEffect(() => {
