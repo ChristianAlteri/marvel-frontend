@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Card from "./Card";
+import Header from "./Header";
+
 
 const Input = () => {
   const [options, setOptions] = useState([]);
   const [search, setSearch] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+
   const publicAPI = process.env.REACT_APP_PUBLIC_API;
   const privateAPI = process.env.REACT_APP_PRIVATE_API;
 
@@ -19,7 +21,6 @@ const Input = () => {
           const names = response.data.data.results.map(
             (character: any) => character.name
           );
-          // Set the options
           setOptions(names);
         }
       } catch (error) {
@@ -54,6 +55,7 @@ const Input = () => {
 
   return (
     <>
+      < Header />
       <form className="form-container">
         <div className="container">
           <div style={{ position: "relative" }}>
@@ -75,7 +77,7 @@ const Input = () => {
                     onClick={() => handleSuggestionClick(suggestion)}
                     className="list-elements"
                   >
-                    {suggestion}
+                    {suggestion} 
                   </li>
                 ))}
               </ul>
@@ -90,8 +92,7 @@ const Input = () => {
           Submit
         </button>
       </form>
-
-      <Card name={search} />
+      {/* <Card name={search} /> */}
     </>
   );
 };

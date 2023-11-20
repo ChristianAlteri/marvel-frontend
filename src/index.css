@@ -22,6 +22,15 @@ code {
 
 }
 
+.header {
+  background-color: slateblue;
+  margin: 20px 50px 50px; 
+  color: aliceblue;
+  padding: 15px;
+  text-align: center;
+  border-radius: 4px;
+}
+
 .container {
   display: flex;
   flex-direction: column; 
@@ -61,7 +70,6 @@ code {
   list-style-type: none; 
   padding: 0; 
   margin: 4px;
-
 }
 
 .list-elements {
