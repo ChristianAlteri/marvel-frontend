@@ -21,6 +21,14 @@ npm install
 npm run start
 ```
 
+## Notes
+- The front end was great fun creating a simple autocomplete dropdown. 
+- Highlight: Completing the task
+- Challenge: 1. API setup 2. I am only grabbing 100 names from the API 
+- Furthermore i would 1. grab more names to auto populate the Input. 2. Further style and build out the page.I would also send the front end selection to my postgres api to store it. Then i would display a sort of 'build your own team' where your heros are displayed.
+
+
+
 ###
 
 Written by Christian Alteri
